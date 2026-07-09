@@ -6236,7 +6236,7 @@ select:focus {
 
 .contact-information-box .title h1 {
     color: #022447;
-    font-size: 60px;
+    font-size: 30px;
     line-height: 1.2em;
     font-weight: 800;
     margin: 4px 0 0;
@@ -6268,7 +6268,7 @@ select:focus {
 }
 
 .contact-information-box .contact-us li a {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 32px;
     font-weight: 500;
     transition: all 200ms linear;
