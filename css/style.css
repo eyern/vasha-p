@@ -2177,7 +2177,7 @@ select:focus {
     position: relative;
     margin: 24px 0 45px;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.1em;
     font-weight: 800;
     text-transform: none;
@@ -3794,7 +3794,7 @@ select:focus {
 }
 
 .single-footer-widget .title h3 {
-    color: #ffffff;
+    color: #FF7700;
     font-size: 20px;
     line-height: 24px;
     font-weight: 800;
@@ -4239,7 +4239,7 @@ select:focus {
     position: relative;
     margin: 25px 0 12px;
     color: #ffffff;
-    font-size: 100px;
+    font-size: 50px;
     line-height: 1.01em;
     font-weight: 700;
     text-transform: none;
@@ -4271,7 +4271,7 @@ select:focus {
     position: relative;
     margin-bottom: 50px;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.6em;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -6235,7 +6235,7 @@ select:focus {
 }
 
 .contact-information-box .title h1 {
-    color: #022447;
+    color: #FF7700;
     font-size: 30px;
     line-height: 1.2em;
     font-weight: 800;
