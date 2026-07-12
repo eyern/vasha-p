@@ -303,7 +303,7 @@ li {
 }
 
 .sec-title .big-title.black h1 {
-    color: #022447;
+    color: #FF7700;
 }
 
 
@@ -7183,3 +7183,76 @@ select:focus {
   .flb.cl {
     background: #FF7700
   }
+
+
+/* Container Structure */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.25rem;
+    letter-spacing: -0.05em;
+    color: #FF7700;
+}
+
+/* Responsive Grid Layout */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Individual Video Box Styles */
+.video-box {
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* Enforces Strict 16:9 Aspect Ratio on Player Content */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Modern CSS standard for video clipping containment */
+    background-color: #000;
+}
+
+.video-wrapper video,
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video scales smoothly without distortion */
+    border: none;
+}
+
+/* Typography Under Video Boxes */
+.video-info {
+    padding: 1.25rem;
+}
+
+.video-info h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #f1f5f9;
+}
+
+.video-info p {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
