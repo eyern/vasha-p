@@ -7256,3 +7256,147 @@ select:focus {
     color: #94a3b8;
     line-height: 1.4;
 }
+
+.rules-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rules-section h2 {
+    font-size: 24px;
+    color: #FF7700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FF7700;
+    padding-bottom: 8px;
+  }
+  
+  .rules-list {
+    counter-reset: rule-counter;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rules-list li {
+    position: relative;
+    counter-increment: rule-counter;
+    margin-bottom: 20px;
+    padding-left: 50px;
+  }
+  
+  .rules-list li::before {
+    content: counter(rule-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    background-color: #FF7700;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .rules-list h3 {
+    font-size: 18px;
+    color: #333333;
+    margin: 0 0 5px 0;
+  }
+  
+  .rules-list p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+
+  /* Section Wrapper */
+.disclaimer-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Container limits width and adds a subtle alert border */
+  .disclaimer-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-left: 4px solid #FF7700; /* Subtle warning amber color */
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Title Styling */
+  .disclaimer-title {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #FF7700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Text Body Styling */
+  .disclaimer-text {
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 15px;
+  }
+  
+  /* Removes bottom margin from the last paragraph */
+  .disclaimer-text:last-child {
+    margin-bottom: 0;
+  }
+  
+
+/* Flexbox Layout for the 3 maps */
+.map-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual card styling */
+.map-card {
+    flex: 1 1 calc(33.333% - 20px); /* Adjusts to fit 3 in a row */
+    min-width: 280px; /* Prevents maps from getting too narrow */
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.map-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #FF7700;
+    text-align: center;
+}
+
+/* Making the iFrame fully responsive inside the card */
+.map-card iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 4px;
+}
+  
